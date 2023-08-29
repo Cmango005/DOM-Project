@@ -1,11 +1,11 @@
 let total=0;
 function handleClikBtn(target){
     const selectedItemContainer = document.getElementById("info");
-    const itemName = target.parentNode.childNodes[3].innerText;
+    const itemName = target.parentNode.childNodes[5].innerText;
     const li = document.createElement("li");
     li.innerText=itemName;
     selectedItemContainer.appendChild(li);
-    const price = target.parentNode.childNodes[5].innerText;
+    const price = target.parentNode.childNodes[7].innerText;
     total= parseFloat(total)+parseFloat(price);
     document.getElementById("total").innerText=total;
     document.getElementById("fullTotal").innerText=total;
@@ -14,6 +14,7 @@ function handleClikBtn(target){
         purchaseConfirm.removeAttribute('disabled');
       }
 }
+
 document.getElementById('code-confirm').addEventListener('keyup',function(event){
     const text = event.target.value;
     const codeConfirm = document.getElementById('apply-code');
@@ -28,7 +29,7 @@ document.getElementById("apply-code").addEventListener('click',function(){
   const total = parseFloat(
     document.getElementById("total").innerText
   );
-  const discount = (total / 100) * 20;
+  const discount = parseFloat((total / 100) * 20);
   document.getElementById("discount").innerText = parseFloat(discount);
   document.getElementById("fullTotal").innerText =
   total - parseFloat(discount);
