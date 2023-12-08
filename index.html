@@ -30,7 +30,7 @@
                             Kitchenware
                         </h3>
                         <div  class="grid grid-cols-1 lg:grid-cols-3 gap-80 mt-10 ">
-                            <div  class="card-body w-80 bg-base-100 shadow-xl items-center rounded-xl cursor-pointer">
+                            <div  class="card-body w-72 bg-base-100 shadow-xl items-center rounded-xl cursor-pointer">
                               <figure onclick="handleClikBtn(this)"><img src="/images/prod1.png" alt="" /></figure>
                               
                                 
@@ -46,7 +46,7 @@
                              
                               
                             </div>
-                            <div  class="card-body w-80 bg-base-100 shadow-xl items-center rounded-xl cursor-pointer">
+                            <div  class="card-body w-72 bg-base-100 shadow-xl items-center rounded-xl cursor-pointer">
                               <figure onclick="handleClikBtn(this)"><img src="/images/prod2.png" alt="" /></figure>
                               
                                 
@@ -62,7 +62,7 @@
                                 
                               
                             </div>
-                            <div class="card-body w-80 bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
+                            <div class="card-body w-72 bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
                               <figure onclick="handleClikBtn(this)"><img src="/images/prod3.png" alt="" /></figure>
                               
                                 
@@ -86,7 +86,7 @@
                             Sportswear
                         </h3>
                         <div class="grid grid-cols-1 lg:grid-cols-3 gap-80 mt-10">
-                            <div class="card-body w-80 bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
+                            <div class="card-body w-72  bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
                               <figure onclick="handleClikBtn(this)"><img src="/images/prod4.png" alt="" /></figure>
                               
   
@@ -102,7 +102,7 @@
                              
                               
                             </div>
-                            <div class="card-body w-80 bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
+                            <div class="card-body w-72  bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
                               <figure onclick="handleClikBtn(this)"><img src="/images/prod5.png" alt="Shoes" /></figure>
                               
                                 
@@ -118,7 +118,7 @@
                                 
                             
                             </div>
-                            <div  class="card-body w-80 bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
+                            <div  class="card-body w-72 bg-base-100 shadow-xl items-center cursor-pointer rounded-xl">
                               <figure onclick="handleClikBtn(this)"><img src="/images/prod6.png" alt="Shoes" /></figure>
                               
                                 
@@ -147,10 +147,10 @@
                         </label>
                         <label class="input-group">
                           <input id="code-confirm" type="text" placeholder="Coupon Code" class="input input-bordered" />
-                          <button id="apply-code" disabled  class="bg-pink-600 text-white p-3">APPLY</button>
+                          <button id="apply-code" disabled  class="bg-pink-600 text-white btn p-3">APPLY</button>
                         </label>
                     </div>
-                    <div class="mt-10 bg-gray-50 h-80">
+                    <div class="mt-10 bg-gray-50 h-fit">
                         <div id="info" class="pl-3 pt-3">
                             
                         </div>
@@ -160,10 +160,11 @@
                             <p>Discount: <span id="discount">00</span></p>
                             <p>Total: <span id="fullTotal">00</span></p>
                         </div>
-                          <hr class="ml-5 mr-5">
+                          <hr class="ml-5 mr-5 mb-5">
+                          <button id="purchase" disabled class="btn bg-pink-600 text-white p-3 ml-24 -mb-36 rounded-md" onclick="my_modal_1.showModal()">Make Purchase</button>
                     </div>
                      <div>
-                       <button id="purchase" disabled class="btn bg-pink-600 text-white p-3 ml-24 -mt-36 rounded-md" onclick="my_modal_1.showModal()">Make Purchase</button>
+                       
                        <dialog id="my_modal_1" class="modal">
                        <form method="dialog" class="modal-box">
                         <img class="relative left-[10rem]" src="/images/congo.png" alt="" />
